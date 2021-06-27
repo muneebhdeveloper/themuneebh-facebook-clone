@@ -1,9 +1,9 @@
 import React from "react";
 import "./menu-icon.styles.css";
 
-function MenuIcon({ Icon }) {
+function MenuIcon({ Icon, rounded }) {
   return (
-    <div>
+    <div className={rounded && "icon-rounded"}>
       <Icon />
     </div>
   );

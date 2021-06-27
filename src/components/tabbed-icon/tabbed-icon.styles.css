@@ -2,6 +2,9 @@
   position: relative;
   width: 100%;
   text-align: center;
+  background-color: transparent;
+  border: none;
+  height: 100%;
 }
 
 .tabbed-icon::after {
@@ -10,9 +13,14 @@
   height: 3px;
   background-color: var(--primary-color);
   position: absolute;
-  top: 50px;
+  bottom: -5px;
   left: 0;
+
   transition: width 0.2s ease;
+}
+
+.tabbed-icon:hover {
+  background-color: var(--bg-color-hover);
 }
 
 .tabbed-icon--active::after,
@@ -33,7 +41,7 @@
 .tabbed-icon_badge {
   position: absolute;
   right: 30%;
-  top: -5px;
+  top: 8px;
   color: white;
   background-color: red;
   border-radius: 50%;

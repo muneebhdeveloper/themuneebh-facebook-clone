@@ -7,9 +7,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 50px;
-  padding: 10px;
+  height: 55px;
+  padding: 5px;
   box-shadow: 0px 5px 9px -1px rgba(0, 0, 0, 0.082);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-white);
 }
 
 .header_left,
@@ -20,6 +25,18 @@
   flex: 1;
 }
 
+.header_right {
+  justify-content: flex-end;
+  height: 100%;
+  gap: 10px;
+  margin-right: 20px;
+}
+
+.header_left {
+  margin-left: 10px;
+}
+
 .header_center {
   justify-content: space-around;
+  height: 100%;
 }

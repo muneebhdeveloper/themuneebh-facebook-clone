@@ -1,17 +1,20 @@
 import React from "react";
 import "./tabbed-icon.styles.css";
 
-function TabbedIcon({ Icon, title, badge, active }) {
+function TabbedIcon({ Icon, title, badge, active, onIconActive }) {
+  const activeItem = active;
+
   return (
-    // eslint-disable-next-line jsx-a11y/anchor-is-valid
-    <a
-      href="#"
-      className={`${active ? `tabbed-icon--active` : null} tabbed-icon`}
+    <button
+      className={`${
+        activeItem === title ? `tabbed-icon--active` : ""
+      } tabbed-icon`}
       title={title}
+      onClick={onIconActive}
     >
       {badge ? <div className="tabbed-icon_badge">{badge}</div> : null}
       <Icon className="tabbed-icon_icon" />
-    </a>
+    </button>
   );
 }
 

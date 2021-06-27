@@ -1,0 +1,23 @@
+.list-item {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  border-radius: 100px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  background-color: var(--bg-color-hover);
+}
+
+.list-item_icon {
+  font-size: 30px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.list-item_title {
+  font-size: 1.4em;
+}
